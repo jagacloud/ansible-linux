@@ -10,5 +10,6 @@
       - htop
       - mc
       - cockpit
+      - links2
       state: latest
       cache_valid_time: 3600
