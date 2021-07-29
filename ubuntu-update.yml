@@ -1,11 +1,11 @@
 ---
 - hosts: all
   become: yes
-  become_user: root
+  become_method: sudo su
+  become_user: huawei
   tasks:
   - name: Updata and upgrade
     apt:
-      update: yes
       upgrade: yes
       update_cache: yes
       cache_valid_time: 86400
