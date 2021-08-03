@@ -1,0 +1,7 @@
+---
+- hosts: all
+  become: yes
+  become_method: enable
+   tasks:
+    - debug: var=hostvars[inventory_hostname]['ansible_default_ipv4']['address']
+    - debug: var=hostvars[inventory_hostname]['ansible_default_ipv6']['address']
