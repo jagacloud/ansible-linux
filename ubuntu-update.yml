@@ -1,7 +1,7 @@
 ---
 - hosts: all
-  become: true
-  become_method: sudo
+  become: yes
+  become_method: enable
   
   - name: Update APT Cache
   apt:
