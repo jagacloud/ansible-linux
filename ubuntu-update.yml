@@ -1,7 +1,7 @@
 ---
 - hosts: all
-  become: yes
-  become_method: enable
+  user: huawei
+  sudo: yes
   
   - name: Update APT Cache
   apt:
